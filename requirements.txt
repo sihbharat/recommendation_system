@@ -1,0 +1,7 @@
+nltk
+scikit-learn
+googlemaps
+flask
+numpy
+pandas
+dotenv
