@@ -20,7 +20,11 @@ gmaps = googlemaps.Client(key=_key)
 current_directory = os.getcwd()
 current_directory = current_directory.replace('\\','/')
 dfpath = f"{current_directory}/jobdf.csv"
-print(dfpath)
+nltk.download("stopwords")
+nltk.download('punkt')
+nltk.download("wordnet")
+nltk.download("omw-1.4")
+# print(dfpath)
 dummy = pd.read_csv(dfpath)
 
 def gettingProcessedJoblist():
